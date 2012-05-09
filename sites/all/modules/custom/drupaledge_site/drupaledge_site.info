@@ -1,0 +1,5 @@
+name = Sup site
+description = Sup site.
+package = Sup
+core = 7.x
+php = 5.x

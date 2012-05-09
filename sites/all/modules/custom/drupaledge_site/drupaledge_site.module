@@ -1,0 +1,30 @@
+<?php
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Implements hook_init().
+ */
+function drupaledge_site_init() {
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function drupaledge_site_ctools_plugin_api($owner, $api) { 
+  if ($owner == 'panels') {
+    return array('version' => 2.0);
+  }
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function drupaledge_site_ctools_plugin_directory($module, $plugin) {
+  if (in_array($module, array('ctools', 'panels', 'page_manager'))) {
+    return "plugins/$plugin";
+  }
+}
