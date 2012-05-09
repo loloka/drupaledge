@@ -5,3 +5,7 @@ root {
 #buffer {
   display: none;
 }
+
+#stage {
+  margin: 0 auto;
+}

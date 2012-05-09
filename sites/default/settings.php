@@ -207,7 +207,7 @@ $databases = array (
     array (
       'database' => 'drupaledge',
       'username' => 'root',
-      'password' => '87654321',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
